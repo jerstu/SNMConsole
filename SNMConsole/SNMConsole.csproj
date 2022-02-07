@@ -8,7 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DataGenerator\" />
+    <Compile Remove="DataGenerator\**" />
+    <EmbeddedResource Remove="DataGenerator\**" />
+    <None Remove="DataGenerator\**" />
   </ItemGroup>
 
   <ItemGroup>
