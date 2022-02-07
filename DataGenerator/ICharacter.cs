@@ -6,6 +6,7 @@
         // The Increment() should return true if it has reached its maximum value and "rolled over" to the minimum (Z -> A or 9 -> 0)
         // This signals to the generator that the next position or "place value" must also be incremented before returning to position ^1
         bool Increment();
+        void GetRandomValue();
         string ToString();
     }
 }

@@ -26,5 +26,10 @@ namespace DataGenerator
         {
             return C.ToString();
         }
+
+        public void GetRandomValue()
+        {
+            // No Implementation Necessary
+        }
     }
 }

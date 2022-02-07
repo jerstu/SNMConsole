@@ -4,9 +4,15 @@
     {
         public int N;
 
-        public Number()
+        public Number(int initialValue = 0)
         {
-            N = 0;
+            N = initialValue;
+        }
+
+        public void GetRandomValue()
+        {
+            Random random = new();
+            N = random.Next(0,9);
         }
 
         public bool Increment()

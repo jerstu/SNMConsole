@@ -20,5 +20,11 @@
         {
             return L.ToString();
         }
+
+        public void GetRandomValue()
+        {
+            Random random = new();
+            L = (char)random.Next('A', 'Z');
+        }
     }
 }

@@ -21,7 +21,7 @@ namespace DataGenerator
             CurrentValue = initialValue;
         }
 
-        private string ICharacterArrayToString()
+        private string CurrentValueToString()
         {
             StringBuilder s = new();
             foreach (var character in CurrentValue)
@@ -32,9 +32,9 @@ namespace DataGenerator
         }
 
 
-        public List<string> Build(bool randomized = false)
+        public List<string> BuildAllValues(bool randomized = false)
         {
-            SerialList.Add(ICharacterArrayToString());
+            SerialList.Add(CurrentValueToString());
             for (var position = CurrentValue.Length - 1; position >= 0;)
             {
                 if (CurrentValue[position].Increment())
@@ -43,7 +43,7 @@ namespace DataGenerator
                 }
                 else
                 {
-                    SerialList.Add(ICharacterArrayToString());
+                    SerialList.Add(CurrentValueToString());
                     position = CurrentValue.Length - 1;
                 }
             }
@@ -66,12 +66,21 @@ namespace DataGenerator
             }
         }
 
-        public void WriteToConsole()
+        public void WriteAllToConsole()
         {
             foreach(var item in SerialList)
             {
                 Console.WriteLine(item);
             }
+        }
+
+        public string GetRandomSerial()
+        {
+            foreach (ICharacter character in CurrentValue)
+            {
+                character.GetRandomValue();
+            }
+            return CurrentValueToString();
         }
 
         //public void RandomWriteToCSVFile(string outFile = "randommaster.csv")
