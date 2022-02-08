@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 // DataGenerator.Generator takes a "sequence" template which is a string that defines how a serial number is generated
+// DataGenerator has no public properties. Only a handful of methods which other utilities can utilize to create the type of serials they need.
 
 
 namespace DataGenerator
@@ -82,19 +83,5 @@ namespace DataGenerator
             }
             return CurrentValueToString();
         }
-
-        //public void RandomWriteToCSVFile(string outFile = "randommaster.csv")
-        //{
-        //    using (StreamWriter outputFile = new StreamWriter(outFile))
-        //    {
-        //        foreach (var item in RandomPatternMasterList)
-        //        {
-        //            outputFile.WriteLine(item);
-        //        }
-        //    }
-        //}
-
-
-
     }
 }

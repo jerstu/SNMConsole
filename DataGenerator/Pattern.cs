@@ -34,7 +34,7 @@ namespace DataGenerator
                     case 'A':
                         characterList.Add(new Letter());
                         break;
-                    case 'C':
+                    case '₵':
                         characterList.Add(new Constant(templateString[i + 1]));
                         break;
                 }
