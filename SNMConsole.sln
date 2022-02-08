@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SNMConsole", "SNMConsole\SNMConsole.csproj", "{C9EAFAB3-E508-417F-82DA-CA7C10F468BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGenerator", "DataGenerator\DataGenerator.csproj", "{D0593060-2B54-444E-9270-A077D7FA9CEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataGenerator", "..\DataGenerator\DataGenerator.csproj", "{0FB00E07-7C1B-4D7C-A6BC-A87E441E8E91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{C9EAFAB3-E508-417F-82DA-CA7C10F468BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9EAFAB3-E508-417F-82DA-CA7C10F468BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9EAFAB3-E508-417F-82DA-CA7C10F468BB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D0593060-2B54-444E-9270-A077D7FA9CEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D0593060-2B54-444E-9270-A077D7FA9CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D0593060-2B54-444E-9270-A077D7FA9CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D0593060-2B54-444E-9270-A077D7FA9CEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FB00E07-7C1B-4D7C-A6BC-A87E441E8E91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FB00E07-7C1B-4D7C-A6BC-A87E441E8E91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FB00E07-7C1B-4D7C-A6BC-A87E441E8E91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FB00E07-7C1B-4D7C-A6BC-A87E441E8E91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

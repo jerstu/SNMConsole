@@ -8,13 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="DataGenerator\**" />
-    <EmbeddedResource Remove="DataGenerator\**" />
-    <None Remove="DataGenerator\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\DataGenerator\DataGenerator.csproj" />
+    <ProjectReference Include="..\..\DataGenerator\DataGenerator.csproj" />
   </ItemGroup>
 
 </Project>
